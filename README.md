@@ -24,8 +24,7 @@
 [![Issues][issues-badge]][issues-link]
 [![Pull Requests][prs-badge]][prs-link]
 
-<img  width="500" src="https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-2.jpg">
-<img  width="500" src="https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-3.jpg">
+![v6 Sapphire](https://raw.githubusercontent.com/ClearVision/ClearVision-v7/refs/heads/master/screenshots/treatment-3.jpg)
 
 </div>
 
@@ -49,6 +48,9 @@ Goals:
 ## Theme Editor
 
 Currently not available
+
+You can check for updates regarding the theme editor [here](https://discord.gg/ZHthyCw)
+
 
 ## Installing
 
@@ -93,4 +95,6 @@ Run `pnpm run test` to compile the theme.
 The `main.css` file builds to the `/test` directory, which can then be copied into your client mod's Custom CSS or placed in the themes folder and enabled in settings. Just make sure any other themes are disabled for testing.
 
 ## Support
-Join our [discord server](https://discord.gg/dHaSxn3) and post in our support channel if you need additional help!
+[Join our discord server](https://discord.gg/dHaSxn3) and post in our support channel if you need additional help!
+
+<small>_If you feel you have been unfairly punished, you can [join the appeal server](https://discord.gg/Yz7tkHbpcv). Note that if your appeal has been denied, you will not be able to join._</small>

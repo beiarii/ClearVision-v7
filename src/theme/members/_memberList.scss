@@ -1,15 +1,12 @@
 @use 'backend' as *;
 
-#{c(main visualRefresh)} {
-  #{c(memberList container)} {
-    background: none;
-    border: none;
-  }
-  #{c(memberList wrap)} {
-    background: none;
-    border: none;
-    height: 100%;
-  }
+#{c(memberList container)} {
+  background: none;
+  border: none;
+}
+#{c(memberList wrap)} {
+  background: none;
+  border: none;
 }
 #{c(memberList members)} {
   background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
@@ -45,13 +42,11 @@
 }
 
 // RECENT ACTIVITY
-#{c(main visualRefresh)} {
-  #{c(memberList activityContainer)} {
-    background: cv('shading.card');
-    border-radius: 8px;
-    border-width: 2px;
-    padding-left: 10px;
-  }
+#{c(memberList activityContainer)} {
+  background: cv('shading.card');
+  border-radius: 8px;
+  border-width: 2px;
+  padding-left: 10px;
 }
 #{c(memberList activityContainerSelected)} {
   &,
@@ -87,46 +82,51 @@
 #{c(memberList name)} {
   width: fit-content;
 }
-#{c(memberList nameContainer)} {
-  position: static;
-  transition: all 0.15s ease-in-out;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, cv('shading.hover') 90%, transparent);
-    border-radius: 3px;
-    opacity: 0;
+#{c(memberList member)} {
+  #{c(memberList nameContainer)} {
+    position: static;
     transition: all 0.15s ease-in-out;
-    z-index: -1;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, cv('color.main') 90%, transparent);
-    border-radius: 3px;
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-  }
-  &[style^='color:'] {
-    &:before,
-    &:after {
-      background: linear-gradient(to right, currentColor 90%, transparent);
+    z-index: unset;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: -8px;
+      background: linear-gradient(to right, cv('shading.hover') 90%, transparent);
+      border-radius: 4px;
+      opacity: 0;
+      transition: all 0.15s ease-in-out;
+      z-index: -1;
     }
-  }
-  #{c(memberList nameplated)} & {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: calc(100% + 8px);
+      bottom: 0;
+      left: -8px;
+      background: linear-gradient(to right, cv('color.main') 90%, transparent);
+      border-radius: 3px;
+      opacity: 0.8;
+      transition: all 0.3s ease-in-out;
+      z-index: -1;
+    }
     &[style^='color:'] {
       &:before,
       &:after {
-        background: linear-gradient(to right, currentColor, transparent);
+        background: linear-gradient(to right, currentColor 90%, transparent);
+      }
+    }
+  }
+  #{c(memberList nameContainer)} {
+    #{c(memberList nameplated)} & {
+      &[style^='color:'] {
+        &:before,
+        &:after {
+          background: linear-gradient(to right, currentColor, transparent);
+        }
       }
     }
   }
@@ -166,7 +166,7 @@
     background-color: transparent;
   }
   #{c(memberList nameContainer)} {
-    -webkit-text-fill-color: var(--interactive-active);
+    -webkit-text-fill-color: var(--interactive-text-active);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     &:after {
       right: 0;
@@ -174,7 +174,7 @@
   }
   #{c(memberList activityText)},
   strong {
-    color: var(--interactive-active);
+    color: var(--interactive-text-active);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
   }
   #{c(memberList ownerIcon)} {

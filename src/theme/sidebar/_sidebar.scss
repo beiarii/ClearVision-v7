@@ -1,14 +1,8 @@
 @use 'backend' as *;
-#{c(os win)} {
-  #{c(sidebar sidebar)} {
-    border-radius: 0;
-  }
-}
-#{c(main visualRefresh)} {
-  #{c(sidebar sidebar)} {
-    background: transparent;
-    &:after {
-      display: none;
-    }
+
+#{c(sidebar sidebar)} {
+  background: transparent;
+  &:after {
+    display: none;
   }
 }

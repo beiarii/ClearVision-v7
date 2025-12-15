@@ -15,11 +15,11 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   &,
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
     // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
-    --text-normal: hsl(from var(--normal-text) #{$calc});
+    --text-default: hsl(from var(--normal-text) #{$calc});
     --text-muted: hsl(from var(--muted-text) #{$calc});
     --text-link: var(--hsl-main-color);
     --text-brand: var(--hsl-main-color);
-    --text-positive: var(--hsl-success-color);
+    --text-feedback-positive: var(--hsl-success-color);
     --text-danger: var(--hsl-danger-color);
     
     // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
@@ -59,7 +59,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --font-display: var(--main-font);
   --font-code: var(--code-font);
 
-  --focus-primary: var(var(--focus-color));
+  --focus-primary: var(--focus-color);
 
   // other stuff that the theme sets
 
@@ -101,10 +101,10 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
 
-  --channel-normal: var(--interactive-normal);
+  --channel-normal: var(--interactive-text-default);
   --channel-muted: var(--interactive-muted); 
-  --channel-hover: var(--interactive-hover);
-  --channel-selected: var(--interactive-active);
+  --channel-hover: var(--interactive-text-hover);
+  --channel-selected: var(--interactive-text-active);
   --channel-selected-bg: var(--main-color);
   --channel-unread: var(--main-color);
   --channel-unread-hover: var(--hover-color);

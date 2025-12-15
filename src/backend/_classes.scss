@@ -284,6 +284,7 @@ $classes: (
     'themeBrand': 'theme-brand',
     // no idea where this is used; does not appear using secret color theme
     'customTheme': 'custom-theme-background',
+    'themeColorPicker': 'client-theme-color-picker',
 
     // Settings > Appearance > select any "color theme".
     // Images
@@ -294,33 +295,33 @@ $classes: (
     'keyboardMode': 'keyboard-mode',
     'focused': 'app-focused',
     'layerContainer': 'layerContainer_da8173',
-    'container': 'container_c48ade',
-    'content': 'content_c48ade',
+    'container': 'container__5e434',
+    'content': 'content__5e434',
     'layer': 'layer_da8173',
     'mediaEngineVideo': 'media-engine-video',
     // class found within JS
-    'base': 'base_c48ade',
-    'baseContent': 'content_c48ade',
+    'base': 'base__5e434',
+    'baseContent': 'content__5e434',
     // same line as base
-    'page': 'page_c48ade',
+    'page': 'page__5e434',
     'pictureInPicture': 'pictureInPicture__6341f',
     'pictureInPictureWindow': 'pictureInPictureWindow__6341f',
     'anchorLink': 'anchor_edefb8',
     'anchorLinkUnderlineOnHover': 'anchorUnderlineOnHover_edefb8',
     'desaturate': 'desaturate_c7819f',
 
-    'wanderingCubes': 'wanderingCubes__0b5bb',
-    'wanderingCubesItem': 'item__0b5bb',
-    'spinner': 'spinner__0b5bb',
-    'spinnerCircle': 'spinningCircle__0b5bb',
-    'spinnerCircleInner': 'spinningCircleInner__0b5bb',
-    'spinnerCirclePath': 'path__0b5bb',
-    'spinnerCirclePath3': 'path3__0b5bb',
+    'wanderingCubes': 'wanderingCubes__46696',
+    'wanderingCubesItem': 'item__46696',
+    'spinner': 'spinner__46696',
+    'spinnerCircle': 'spinningCircle__46696',
+    'spinnerCircleInner': 'spinningCircleInner__46696',
+    'spinnerCirclePath': 'path__46696',
+    'spinnerCirclePath3': 'path3__46696',
     'spinnerPulsingEllipsisPopout': 'spinner_e90879',
-    'spinnerPulsingEllipsis': 'pulsingEllipsis__0b5bb',
+    'spinnerPulsingEllipsis': 'pulsingEllipsis__46696',
 
     // has a filter relating to the saturation factor variable
-    'loader': 'loader_c48ade',
+    'loader': 'loader__5e434',
 
     // probably used elsewhere but 100% used for loading "Browse Channels" for the first time during a session.
     'focusRing': 'focus-rings-ring',
@@ -328,10 +329,7 @@ $classes: (
     // tab around to see this, other extra classes may appear in other areas.
     // Visual Refresh stuff
     'visualRefresh': 'visual-refresh',
-    // 2024-05_desktop_visual_refresh (Desktop Visual Refresh); select treatments 1-4
-    'visualRefreshChatInput': 'visual-refresh-chat-input',
 
-    // same experiment, select treatment 1 or 2.
     // no idea what these classes are about
     'backgroundOpacity': (
         'low': 'background-opacity-low',
@@ -376,63 +374,67 @@ $classes: (
       ),
   ),
 
+  'experiments': (
+    'manaTextInputs': 'mana-text-inputs',
+  ),
+
   'input': (
-    'wrapper': 'inputWrapper__0f084',
+    'wrapper': 'wrapper__72c38',
+
+    'container': 'container__0f084',
     'input': 'input__0f084',
     'focused': 'focused__0f084',
-    'field': 'inputField_d64f22',
-    'multiField': 'multiInputField_b404ff',
-    'copy': 'copyInput_cedfaf',
   ),
   'checkbox': (
     // checkboxes
-    'wrapper': 'checkboxWrapper_f525d3',
-    'wrapperDisabled': 'checkboxWrapperDisabled_f525d3',
-    'checkbox': 'checkbox_f525d3',
-    'checked': 'checked_f525d3',
+    'wrapper': 'checkboxWrapper__09aca',
+    'wrapperDisabled': 'checkboxWrapperDisabled__09aca',
+    'checkbox': 'checkbox__09aca',
+    'checked': 'checked__09aca',
 
     // input stuffs
-    'input': 'input_f525d3',
-    'inputDefault': 'inputDefault_f525d3',
-    'inputDisabled': 'inputDisabled_f525d3',
-    'inputReadonly': 'inputReadonly_f525d3',
+    'input': 'input__09aca',
+    'inputDefault': 'inputDefault__09aca',
+    'inputDisabled': 'inputDisabled__09aca',
+    'inputReadonly': 'inputReadonly__09aca',
 
     // shapes
-    'round': 'round_f525d3',
-    'box': 'box_f525d3',
-    'smallBox': 'smallBox_f525d3',
+    'round': 'round__09aca',
+    'box': 'box__09aca',
+    'smallBox': 'smallBox__09aca',
 
     // labels
-    'label': 'label_f525d3',
-    'labelClickable': 'labelClickable_f525d3',
-    'labelDisabled': 'labelDisabled_f525d3',
-    'labelForward': 'labelForward_f525d3',
-    'labelReversed': 'labelReversed_f525d3',
+    'label': 'label__09aca',
+    'labelClickable': 'labelClickable__09aca',
+    'labelDisabled': 'labelDisabled__09aca',
+    'labelForward': 'labelForward__09aca',
+    'labelReversed': 'labelReversed__09aca',
 
-    'row': 'row_f525d3',
-    'alignTop': 'alignTop_f525d3',
-    'alignCenter': 'alignCenter_f525d3',
+    'row': 'row__09aca',
+    'alignTop': 'alignTop__09aca',
+    'alignCenter': 'alignCenter__09aca',
   ),
 
   'switch': (
-    'container': 'container__87bf1',
-    'slider': 'slider__87bf1',
-    'checked': 'checked__87bf1',
-    'disabled': 'disabled__87bf1',
-    'input': 'input__87bf1',
+    'container': 'container__3f21e',
+    'slider': 'slider__3f21e',
+    'checked': 'checked__3f21e',
+    'disabled': 'disabled__3f21e',
+    'input': 'input__3f21e',
   ),
 
   'radio': (
-    'item': 'item__001a7',
-    'itemDisabled': 'disabled__001a7',
-    'bar': 'radioBar__001a7',
-    'barInfo': 'info__001a7',
-    'iconForeground': 'radioIconForeground__001a7',
-    'indicatorChecked': 'radioIndicatorChecked__001a7',
-    'refreshIconFill': 'refreshIconFill__001a7',
-    'refreshIconStroke': 'refreshIconStroke__001a7',
-    'refreshIcon': 'refreshIcon__001a7',
+    'item': 'item__88a69',
+    'itemDisabled': 'disabled__88a69',
+    'bar': 'radioBar__88a69',
+    'barInfo': 'info__88a69',
+    'iconForeground': 'radioIconForeground__88a69',
+    'indicatorChecked': 'radioIndicatorChecked__88a69',
+    'refreshIconFill': 'refreshIconFill__88a69',
+    'refreshIconStroke': 'refreshIconStroke__88a69',
+    'refreshIcon': 'refreshIcon__88a69',
   ),
+
   'slider': (
     'slider': 'slider_a562c8',
     'mini': 'mini_a562c8',
@@ -449,6 +451,17 @@ $classes: (
     'markDashSimple': 'markDashSimple_a562c8',
     'defaultValue': 'defaultValue_a562c8',
   ),
+
+  'pagination': (  
+    // page control buttons
+    // found in search and shop (browse)  
+    'pageControlContainer': 'pageControlContainer_c15210',
+    'pageControl': 'pageControl_c15210',
+    'pageButton': 'pageButton_c15210',
+    'activeButton': 'activeButton_c15210',
+    'endButton': 'endButton_c15210',
+  ),
+
   'text': (
     // These are within the same group but not with the rest. not sure where to put these
     'textNormalDefaultColor': 'defaultColor__4bd52',
@@ -547,52 +560,52 @@ $classes: (
         'bold':'text-xs\/bold_cf4812',
       ),
       'sm': (
-        'normal': 'text-sm\/normal_f9d828' 'text-sm\/normal_a8af02' 'text-sm\/normal__4ed1a' 'text-sm\/normal_a39fe9' 'text-sm\/normal_aabef9' 'text-sm\/normal_c23051' 'text-sm\/normal_cf4812' 'text-sm\/normal_b717a1' 'text-sm\/normal_df8943' 'text-sm\/normal_ec1c2d',
-        'medium': 'text-sm\/medium_f9d828' 'text-sm\/medium_a8af02' 'text-sm\/medium__4ed1a' 'text-sm\/medium_a39fe9' 'text-sm\/medium_aabef9' 'text-sm\/medium_c23051' 'text-sm\/medium_cf4812' 'text-sm\/medium_b717a1' 'text-sm\/medium_df8943' 'text-sm\/medium_ec1c2d',
-        'semibold': 'text-sm\/semibold_f9d828' 'text-sm\/semibold_a8af02' 'text-sm\/semibold__4ed1a' 'text-sm\/semibold_a39fe9' 'text-sm\/semibold_aabef9' 'text-sm\/semibold_c23051' 'text-sm\/semibold_cf4812' 'text-sm\/semibold_b717a1' 'text-sm\/semibold_df8943' 'text-sm\/semibold_ec1c2d',
-        'bold': 'text-sm\/bold_f9d828' 'text-sm\/bold_a8af02' 'text-sm\/bold__4ed1a' 'text-sm\/bold_a39fe9' 'text-sm\/bold_aabef9' 'text-sm\/bold_c23051' 'text-sm\/bold_cf4812' 'text-sm\/bold_b717a1' 'text-sm\/bold_df8943' 'text-sm\/bold_ec1c2d',
+        'normal': 'text-sm\/normal_cf4812',
+        'medium': 'text-sm\/medium_cf4812',
+        'semibold': 'text-sm\/semibold_cf4812',
+        'bold': 'text-sm\/bold_cf4812',
       ),
       'md': (
-        'normal': 'text-md\/normal_f9d828' 'text-md\/normal_a8af02' 'text-md\/normal__4ed1a' 'text-md\/normal_a39fe9' 'text-md\/normal_aabef9' 'text-md\/normal_c23051' 'text-md\/normal_cf4812' 'text-md\/normal_b717a1' 'text-md\/normal_df8943' 'text-md\/normal_ec1c2d',
-        'medium': 'text-md\/medium_f9d828' 'text-md\/medium_a8af02' 'text-md\/medium__4ed1a' 'text-md\/medium_a39fe9' 'text-md\/medium_aabef9' 'text-md\/medium_c23051' 'text-md\/medium_cf4812' 'text-md\/medium_b717a1' 'text-md\/medium_df8943' 'text-md\/medium_ec1c2d',
-        'semibold': 'text-md\/semibold_f9d828' 'text-md\/semibold_a8af02' 'text-md\/semibold__4ed1a' 'text-md\/semibold_a39fe9' 'text-md\/semibold_aabef9' 'text-md\/semibold_c23051' 'text-md\/semibold_cf4812' 'text-md\/semibold_b717a1' 'text-md\/semibold_df8943' 'text-md\/semibold_ec1c2d',
-        'bold': 'text-md\/bold_f9d828' 'text-md\/bold_a8af02' 'text-md\/bold__4ed1a' 'text-md\/bold_a39fe9' 'text-md\/bold_aabef9' 'text-md\/bold_c23051' 'text-md\/bold_cf4812' 'text-md\/bold_b717a1' 'text-md\/bold_df8943' 'text-md\/bold_ec1c2d',
+        'normal': 'text-md\/normal_cf4812',
+        'medium': 'text-md\/medium_cf4812',
+        'semibold': 'text-md\/semibold_cf4812',
+        'bold': 'text-md\/bold_cf4812',
       ),
       'lg': (
-        'normal': 'text-lg\/normal_f9d828' 'text-lg\/normal_a8af02' 'text-lg\/normal__4ed1a' 'text-lg\/normal_a39fe9' 'text-lg\/normal_aabef9' 'text-lg\/normal_c23051' 'text-lg\/normal_cf4812' 'text-lg\/normal_b717a1' 'text-lg\/normal_df8943' 'text-lg\/normal_ec1c2d',
-        'medium': 'text-lg\/medium_f9d828' 'text-lg\/medium_a8af02' 'text-lg\/medium__4ed1a' 'text-lg\/medium_a39fe9' 'text-lg\/medium_aabef9' 'text-lg\/medium_c23051' 'text-lg\/medium_cf4812' 'text-lg\/medium_b717a1' 'text-lg\/medium_df8943' 'text-lg\/medium_ec1c2d',
-        'semibold': 'text-lg\/semibold_f9d828' 'text-lg\/semibold_a8af02' 'text-lg\/semibold__4ed1a' 'text-lg\/semibold_a39fe9' 'text-lg\/semibold_aabef9' 'text-lg\/semibold_c23051' 'text-lg\/semibold_cf4812' 'text-lg\/semibold_b717a1' 'text-lg\/semibold_df8943' 'text-lg\/semibold_ec1c2d',
-        'bold': 'text-lg\/bold_f9d828' 'text-lg\/bold_a8af02' 'text-lg\/bold__4ed1a' 'text-lg\/bold_a39fe9' 'text-lg\/bold_aabef9' 'text-lg\/bold_c23051' 'text-lg\/bold_cf4812' 'text-lg\/bold_b717a1' 'text-lg\/bold_df8943' 'text-lg\/bold_ec1c2d',
+        'normal': 'text-lg\/normal_cf4812',
+        'medium': 'text-lg\/medium_cf4812',
+        'semibold': 'text-lg\/semibold_cf4812',
+        'bold': 'text-lg\/bold_cf4812',
       ),
     ),
   ),
   'tab': (
     // Found in multiple locations but best seen in friends list. Each location has other classes attached to the elements. Listed locations may be used in other areas too
-    'header': 'header_b3f026',
+    'header': 'header_aa8da2',
     // used in sidebar of settings areas
-    'headerText': 'headerText_b3f026',
+    'headerText': 'headerText_aa8da2',
     // "USER SETTINGS", "PAYMENT SETTINGS" etc
-    'separator': 'separator_b3f026',
+    'separator': 'separator_aa8da2',
 
     // see header
     // "Types"
-    'topPill': 'topPill_b3f026',
+    'topPill': 'topPill_aa8da2',
     // used in friends list header, inbox dropdown
-    'top': 'top_b3f026',
+    'top': 'top_aa8da2',
     // used in profile popout, roles list (edit)
-    'side': 'side_b3f026',
+    'side': 'side_aa8da2',
 
     // used in channel search, settings sidebar
     // Items themselves
-    'item': 'item_b3f026',
+    'item': 'item_aa8da2',
     // an individual tab
-    'brand': 'brand_b3f026',
+    'brand': 'brand_aa8da2',
     // user settings > profile at top, server/channel settings > roles > (click edit for any) at top
-    'themed': 'themed_b3f026',
+    'themed': 'themed_aa8da2',
 
     // friends list header, channel search, inbox dropdown, profile popout, settings sidebar
-    'selected': 'selected_b3f026',
-    'disabled': 'disabled_b3f026',
+    'selected': 'selected_aa8da2',
+    'disabled': 'disabled_aa8da2',
   ),
   'flowerStar': (
     // used in a few places around the app. best seen next to the name of a server with boosts or in community servers.
@@ -724,6 +737,24 @@ $classes: (
     'colorRed': 'colorRed__201d5',
     'colorTransparent': 'colorTransparent__201d5',
     'colorWhite': 'colorWhite__201d5',
+
+    // new button classes
+    'new': (
+      'button': 'button_a22cb0',
+      'hasText': 'hasText_a22cb0',
+
+      'small': 'sm_a22cb0',
+      'medium': 'md_a22cb0',
+      'fullWidth': 'fullWidth_a22cb0',
+
+      'primary': 'primary_a22cb0', // brand
+      'secondary': 'secondary_a22cb0', // grey
+      'criticalPrimary': 'critical-primary_a22cb0', //red
+      'criticalSecondary': 'critical-secondary_a22cb0', // red inverted
+      'active': 'active_a22cb0', // green
+      'overlayPrimary': 'overlay-primary_a22cb0', // white
+      'overlaySecondary': 'overlay-secondary_a22cb0', // white inverted
+    )
   ),
   'call': (
     // There's a bit of overlap with "stage". feel free to jump down to there.
@@ -739,6 +770,7 @@ $classes: (
     // applied when screen sharing and not hovered, hides controls (and children of)
     'gradientBackground': 'gradientBackground__11664',
     'gradientSphere': 'sphere__11664',
+    'pulseGradient': 'pulseGradient__11664',
     // both above are seen in empty vc
     'voiceCallWrapper': 'voiceCallWrapper_a21736',
     // paired with rootChild
@@ -747,12 +779,6 @@ $classes: (
     'spriteWrapper': 'spriteWrapper_c8dbe9',
     // this to crossWhite seem to relate to the little animation when leaving a call
     'sprite': 'sprite_c8dbe9',
-    'avatarWrapper': 'wrapper_f910d0',
-    'avatarClickable': 'clickable_f910d0',
-    'callAvatarMask': 'callAvatarMask_f910d0',
-    'voiceAvatar': 'voiceAvatar_f910d0',
-    'avatarBorder': 'border_f910d0',
-    'avatarSpeaking': 'speaking_f910d0',
 
     'videoControls': 'videoControls_bfe55a',
     'controlSection': 'controlSection_bfe55a',
@@ -760,6 +786,16 @@ $classes: (
     'topControls': 'topControls_bfe55a',
     // contains header and region selector
     'headerWrapper': 'headerWrapper_cb9592',
+
+    'subtitleContainer': 'subtitleContainer__49508',
+    'headerBar': 'headerBar__49508',
+    'headerBarChildren': 'headerBarChildren__49508',
+    'title': 'title__49508',
+    'toolbar': 'toolbar__49508',
+
+    'clipsEnabledIndicator': 'clipsEnabledIndicator__8c88a',
+    'clipBadgeIcon': 'clipBadgeIcon__8c88a',
+    // inline bg
 
     'quickSelect': 'quickSelect_ebaca5',
     // for region
@@ -772,11 +808,12 @@ $classes: (
     'quickSelectScroller': 'quickSelectScroller_ebaca5',
     'quickSelectPopoutOption': 'quickSelectPopoutOption_ebaca5',
 
+    'participantsButton': 'participantsButton__211d1',
+
     'bottomControls': 'bottomControls_bfe55a',
     'eventPromptsContainer': 'eventPromptsContainer__1405b',
     'buttonsWrapper': 'wrapper__1405b',
     'buttonSection': 'buttonSection__1405b',
-    'buttonSectionExperiment': 'experimentButtonSection__1405b',
     'fauxDisabled': 'fauxDisabled__666fa',
     // used when camera isn't plugged in
     'contextMenuContainer': 'contextMenuContainer_f1ceac',
@@ -797,26 +834,27 @@ $classes: (
     'white': 'white_f1ceac',
     'red': 'red_f1ceac',
     'green': 'green_f1ceac',
+    'disconnect': 'disconnect_f1ceac',
 
-    'videoRow': 'row_d6271c',
-    'videoTile': 'tile_d6271c',
-    'noVerticalMargin': 'noVerticalMargin_d6271c',
+    // Grid view only
+    'gridRow': 'row_d6271c',
+    'gridTile': 'tile_d6271c',
+    'gridNoVerticalMargin': 'noVerticalMargin_d6271c',
     // paired with videoTile, can't describe usage
-    'noHorizontalMargin': 'noHorizontalMargin_d6271c',
+    'gridNoHorizontalMargin': 'noHorizontalMargin_d6271c',
     // paired with videoTile, used on last tile of row
-    'tileSizer': 'tileSizer_d6271c',
-    'videoWrapper': 'wrapper__2f4f7',
-    'tile': 'tile_eaee1d',
-    // god these names are shit
-    'tileChildFlex': 'tile__2f4f7',
+    'gridTileSizer': 'tileSizer_d6271c',
+
+    'tileWrapper': 'wrapper__2f4f7',
+    'tile': 'tile__2f4f7',
     // contains flex properties
-    'tileChildIdle': 'idle__2f4f7',
-    'tileChildBackground': 'tile__90dc5',
-    // despite being on the same element as the flex, contains background color
+    'tileIdle': 'idle__2f4f7',
+    'tileBackground': 'tile__90dc5',
+    // despite being on the same element as tile, contains background color
     'tileChild': 'tileChild__2f4f7',
     // haha fuck you not actually on the same class as the four above
     'tileContent': 'content__2f4f7',
-    'tileBackground': 'background_fb62e2',
+    'tileUserBackground': 'background_fb62e2',
     // has inline style background applied to it
     'tileAvatarWrapper': 'avatarWrapper_fb62e2',
     'tileIndicators': 'indicators__2f4f7',
@@ -833,24 +871,20 @@ $classes: (
     'tileVideo': 'video__48b20',
     'tileVideoContain': 'videoContain__48b20',
     'tileVideoPreview': 'previewWrapper__48b20',
-    'videoEnded': 'tile__90dc5',
+
     'leftTrayIcon': 'leftTrayIcon_cb9592',
     'rightTrayIcon': 'rightTrayIcon_cb9592',
 
-    'status': 'status_f910d0',
-    'videoBorder': 'border__2f4f7',
-    'videoSpeaking': 'speaking__2f4f7',
+    'tileBorder': 'border__2f4f7',
+    'tileSpeaking': 'speaking__2f4f7',
     'streamBackground': 'root_e605a1',
     'liveQualityIndicator': 'liveQualityIndicator__30845',
     'lowQualityWarningIcon': 'warningIcon__14990',
     'watchStreamButton': 'cta_a3a802',
     'inviteButton': 'buttonColor__7b3e8',
 
-    'resizeHandle': 'resizeHandle__4b144',
     'channelChatWrapper': 'channelChatWrapper_cb9592',
-
-    // invisible class to the right side of the call. 0 width.
-    'chatButtonContainer': 'buttonContainer_ffab0d',
+    // side chat
   ),
   'stage': (
     // heavily relates to call
@@ -963,7 +997,6 @@ $classes: (
     'audienceIcon': 'audienceIcon__55bab',
 
     // no clue, legacy shit or whatever
-    'participantsButton': 'participantsButton__211d1',
     'rtsButtonContainer': 'buttonContainer__664ff',
     'active': 'active_f1ceac',
   ),
@@ -982,22 +1015,24 @@ $classes: (
     'messagesWrapper': 'messagesWrapper__36d07',
     'chatScroller': 'scroller__36d07',
     'chatScrollerInner': 'scrollerInner__36d07',
-    'chatScrollerNSFW': 'scroller__28a87',
-    'chatGatedContent': 'gatedContent__7184c',
+    'scrollerSpacer': 'scrollerSpacer__36d07',
+    // placed at bottom of message list
+    'chatGradientBase': 'chatGradientBase__36d07',
+    // typing... bar
+    'chatScrollerNSFW': 'scroller_f35c3c',
+    'chatGatedWrapper': 'wrapper_f35c3c',
     'chatGatedImage': 'image__7184c',
     'chatGatedTitle': 'title__7184c',
     'chatGatedDescription': 'description__7184c',
-    'chatGatedSeparator': 'separator_def860',
-    // no idea how to actually get it :)
-    'chatGatedAction': 'action__7184c',
-    // buttons
     'chatContentInner': 'chatContent_f75fb0',
     'chatLoadingWrapper': 'wrapper_d852db',
-    'scrollerSpacer': 'scrollerSpacer__36d07',
-    // placed at bottom of message list
     'messageLoadingWrapper': 'wrapper_fc8177',
     'noChannel': 'noChannel__01d5c',
     // in a server without any channels or loading in
+
+    'chatHeaderBar': 'chatHeaderBar_dc83f5',
+    // This channel is not on your channel list.
+   
     'messageDivider': 'divider__5126c',
     'backgroundFlash': 'backgroundFlash__5126c',
     'messageListItem': 'messageListItem__5126c',
@@ -1015,7 +1050,7 @@ $classes: (
     'mentionWrapper': 'wrapper_f61d60',
     'messageSelected': 'selected__5126c',
     'buttons': 'buttons__5126c',
-    'buttonWrapper': 'wrapper_f7ecac',
+    'buttonsWrapper': 'wrapper_f7ecac',
     'button': 'button_f7ecac',
     'buttonSelected': 'selected_f7ecac',
 
@@ -1077,10 +1112,10 @@ $classes: (
     ),
 
     'allowedAvatars': 'avatars__1ee8c',
-    'allowedRoleButton': 'role__1ee8c',
+    'allowedRole': 'role__1ee8c',
     // element kind button
-    'allowedRole': 'role_fa0dd2',
-    'allowedRole2': 'role_b4b2c3',
+    'allowedRoleInner': 'role_fa0dd2',
+    'allowedRoleInner2': 'role_b4b2c3',
     // paired with above
     'allowedRoleColor': 'roleColor_b4b2c3',
 
@@ -1552,6 +1587,10 @@ $classes: (
     'newTextAreaError': 'channelTextAreaInnerError_fb64c9',
     'newThreadTextArea': 'channelTextArea_fb64c9',
     'newThreadTextAreaInner': 'channelTextAreaInner_fb64c9',
+
+    // active threads in server
+    'activethreadsContainer': 'container_a8217b',
+    'activethreadsHeader': 'header_a8217b',
   ),
 
   'serverGuide': (
@@ -1576,10 +1615,10 @@ $classes: (
     'rowMedia': 'media_d13feb',
 
     'sidebar': 'sidebar__7449f',
-    'profileContainer': 'container__86ab2',
-    'profileBanner': 'banner__86ab2',
-    'profileAvatarContainer': 'avatarContainer__86ab2',
-    'profileAvatarWrapper': 'avatarWrapper__86ab2',
+    'profileContainer': 'container_dca174',
+    'profileBanner': 'banner_dca174',
+    'profileAvatarContainer': 'avatarContainer_dca174',
+    'profileAvatarWrapper': 'avatarWrapper_dca174',
   ),
 
   // browse channels/channels and roles
@@ -1730,6 +1769,19 @@ $classes: (
     // div.text-md-normal "No members match these search results.",,
   ),
 
+  'serverBoosts': (
+    'container': 'container__89463',
+    'contentContainer': 'contentContainer__89463',
+    'parentCard': 'parentContainer__5573a',
+    'sidebarContainer': 'sidebarContainer__89463',
+
+    'card': 'container__5573a',
+    'cardActive': 'active__5573a',
+    'cardWarning': 'warning__5573a',
+
+    'sidebarCard': 'container__6c253',
+  ),
+
   'chatForm': (
     'form': 'form_f75fb0',
     'formWithLoadedChatInput': 'formWithLoadedChatInput_f75fb0',
@@ -1869,7 +1921,7 @@ $classes: (
       'cardTitle': 'title__4cb8a',
       'cardMemberDetails': 'memberDetails__4cb8a',
       'onlineDot': 'presenceCountDot__4cb8a',
-      'offlineDot': 'memberCountDot__4cb8a',
+      'countDot': 'memberCountDot__4cb8a',
       'searchContainer': 'container_cbd375',
       'searchNoResult': 'container__74f3e',
     ),
@@ -1912,13 +1964,15 @@ $classes: (
       'nameLink': 'fileNameLink__0ccae',
 
       'upload': (        
-        'progressBar': 'progressBar__89dcd',
+        'progress': 'progress__5a6ab',
+        'progressBar': 'progressBar__5a6ab',
       ),
     ),
 
     'textContainer': (
       'container': 'container__4d95d',
       'textContainer': 'textContainer__4d95d',
+      'codeView': 'codeView__4d95d',
       'footer': 'footer__4d95d',
       'toggleExpand': 'toggleExpandSection__4d95d',
       'openFullPreview': 'openFullPreviewSection__4d95d',
@@ -1927,7 +1981,12 @@ $classes: (
       'downloadButton': 'downloadButton__4d95d',
       'codeIcon': 'codeIcon__4d95d',
       'languageSelectorPopout': 'languageSelector__4d95d',
-      'modalTextContainer': 'modalTextContainer__4d95d',
+
+      'modal': (
+        'content': 'modalContent__4d95d',
+        'textContainer': 'modalTextContainer__4d95d',
+        'footer': 'modalFooter__4d95d',
+      ),
     ),
 
     'invite': (
@@ -1948,6 +2007,10 @@ $classes: (
       'statusOnline': 'statusOnline_d5f3cd',
       'statusOffline': 'statusOffline_d5f3cd',
       'button': 'button_d5f3cd',
+
+      // guild invite embed
+      'guildInviteContainer' :'guildInviteContainer__083ae',
+      'guildInviteFooter': 'footerContent__083ae',
     ),
 
     'gift': (
@@ -2032,27 +2095,13 @@ $classes: (
     ),
 
     'poll': (
-      // poll finished small embed
-      'finished': (
-          'container': 'container_f69538',
-          'embed': 'embed_f69538',
-          'containerWithImage': 'containerWithImage_f69538',
-          'imageContainer': 'imageContainer_f69538',
-          'description': 'description_f69538',
-          'victorAnswer': 'victorAnswer_f69538',
-          'victorAnswerText': 'victorAnswerText_f69538',
-          'victorIcon': 'victorAnswer_f69538',
-          'button': 'button_f69538',
-        ),
-
       'pollContainer': 'pollContainer_b7e1cb',
-
       // shared class with next group's "container"
       // all in another group
+      'container': 'container__0be77',
       'bottomBar': 'bottomBar__0be77',
       // contains detailsText and usually secondary action
       'buttonPresentation': 'buttonPresentation__0be77',
-      'container': 'container__0be77',
       // bg-c card-secondary-bg
       'detailsText': 'detailsText__0be77',
       'detailsTextButton': 'detailsTextButton__0be77',
@@ -2081,22 +2130,43 @@ $classes: (
       'emoji': 'emoji__4c520',
       // optional emoji that gets placed before label
       'label': 'label__4c520',
-      'selected': 'selected__4c520',
+      'selected': 'selected__4c520',      
       'voteCount': 'voteCount__4c520',
       'voteCountButton': 'voteCountButton__4c520',
       'votePercentageBar': 'votePercentageBar__4c520',
       // a span with style width: $percentage%. has background color -- THIS IS USED ON ANSWERS WITHOUT VOTES [style:"width: 0%;"]
       'votesData': 'votesData__4c520',
 
+      'radioBackground': 'radioBackground_f4f0eb',
+      'radioForeground': 'radioForeground_f4f0eb',
+      // one choice
+      'checkbox': 'checkbox_f4f0eb',
+      'checkboxSelected': 'checkboxSelected_f4f0eb',
+      // multiple choices
+
       // how answers are themed seems to be in some classes
       'normalStylesDefault': 'normalStylesDefault_a1443c',
       'normalStylesImageOnlyAnswers': 'normalStylesImageOnlyAnswers_a1443c',
       'victorStyles': 'victorStyles_a1443c',
       'votedStyles': 'votedStyles_a1443c',
+
+      // poll finished small embed
+      'finished': (
+        'container': 'container_f69538',
+        'embed': 'embed_f69538',
+        'containerWithImage': 'containerWithImage_f69538',
+        'imageContainer': 'imageContainer_f69538',
+        'description': 'description_f69538',
+        'victorAnswer': 'victorAnswer_f69538',
+        'victorAnswerText': 'victorAnswerText_f69538',
+        'victorIcon': 'victorAnswer_f69538',
+        'button': 'button_f69538',
+      ),
     ),
 
     'automod': (
       'card': 'embedCard__44492',
+      'selected': 'selected__44492',
       'footerContainer': 'footerContainer__44492',
       'action': 'footerAction__44492',
       'actionIcon': 'footerIcon__44492',
@@ -2210,8 +2280,8 @@ $classes: (
       'allPerksScroller': 'allPerksScroller_ca1a02',
       'allPerksScrollerOpen': 'open_ca1a02',
 
-      'card': 'card_f8e6bf',
-      'cardDescription': 'cardDescription_f8e6bf',
+      'card': 'card_b5493b',
+      'cardDescription': 'cardDescription_b5493b',
 
       'seePerksButton': 'seeAllPerksButton_ca1a02',
 
@@ -2233,18 +2303,20 @@ $classes: (
 
   'shop': (
     'shop': 'shop__6db1d',
-    'scroller': 'shopScroll__6db1d',
+    'scroll': 'shopScroll__1feb0',
     'header': 'headerBar__80679',
 
     // featured
+    'featuredScroll': 'shopScroll__08415',
     'featured': 'shop__08415',
-    'shopAllButton': 'shopAll__08415',
 
-    //shop all
-    'pageWrapper': 'pageWrapper__6db1d',
+    // browse
+    'pageWrapper': 'pageWrapper__1feb0',
+    'page': 'page__1feb0',
+    'divider': 'divider__1feb0',
+    'filter': 'filterBar__1feb0',
 
-    'shopWhatsNew': 'whatsNewSectionBackground_c880e8',
-
+    // loading
     'loadingCardSkeleton': 'skeleton__72fa0',
     'loadingBanner': 'bannerBody__72fa0',
     'loadingCardBody': 'cardBody__72fa0',
@@ -2252,19 +2324,34 @@ $classes: (
     'loadingFeaturedSkeleton': 'skeleton__08415',
     'loadingFeaturedBody': 'skeletonBody__08415',
 
-    'card': 'shopCard_c3d04b',
-    'cardNitro': 'shopCard_b37971',
-    'cardDarkBackground': 'darkCardBackground_c3d04b',
-    'cardDarkBackgroundNitro': 'darkCardBackground_b37971',
-    'cardText': 'cardText_c3d04b',
-    'cardTextLight': 'lightCardBackground_c3d04b',
-    'cardTextDark': 'darkCardBackground_c3d04b',
+    // cards
+    'card': 'productCardContainer_fcbddd',
+    'cardContentInner': 'productCardContentContainer_fcbddd',
+    'cardPreviewContainer': 'productPreviewContainer_fcbddd',
+    'cardPreview': 'productPreview_dec3d3',
+    'cardheaderContainer': 'headerContainer_fcbddd',
+    'cardGradient': 'footerGradient_fcbddd',
+    'cardFooter': 'footerContainer_fcbddd',
+
+    // filter
+    'filterBar': 'filterBar__11877',
+    'filterSection': 'filterSection__11877',
+    'filterTitle__11877': 'filterTitle',
+    'filterColorRow': 'colorSwatchRow__11877',
+    'filterColor': 'circle__11877',
+    'filterColorToggled': 'circleToggled__11877',
+    'filterThemeRow': 'themeRow__11877',
+    'filterTheme': 'theme__11877',
+    'filterThemeToggled': 'themeToggled__11877',
 
     // preview
     'previewModal': 'modalContent_c50f62',
     'previewInfo': 'collectibleInfoContainer_c50f62',
     'chatPreview': 'chatPreview_c50f62',
     'mockInput': 'mockInput_c50f62',
+
+    // orb
+    'orbCard': 'baseCardOutline__1ab14',
   ),
 
   'boost': (
@@ -2343,6 +2430,8 @@ $classes: (
     'themed': 'themed__9293f',
     'transparent': 'transparent__9293f',
     'children': 'children__9293f',
+    'channelIcon': 'channelIcon__9293f',
+    'channelIconWrapper': 'iconWrapper__9293f',
     'divider': 'divider__9293f',
     'iconWrapper': 'iconWrapper__9293f',
     'updateDownloadingCloud': 'cloud__49676',
@@ -2441,19 +2530,19 @@ $classes: (
   ),
   // Obviously best seen in Settings > App Settings > Keybinds. Can also be brought up by pressing CTRL+/
   'keybinds': (
-      'combo': 'combo_fcddc1',
-      'key': 'key_fcddc1',
-      'bindArrow': 'bindArrow_fcddc1',
+      'combo': 'combo__61c93',
+      'key': 'key__61c93',
+      'bindArrow': 'bindArrow__61c93',
       // unless "down", has extra class for direction
-      'up': 'up_fcddc1',
-      'left': 'left_fcddc1',
-      'right': 'right_fcddc1',
+      'up': 'up__61c93',
+      'left': 'left__61c93',
+      'right': 'right__61c93',
 
-      'searchPopout': 'keybindShortcutSearchPopout_fcddc1',
-      'shortcuts': 'keyboardShortcuts_fcddc1',
+      'searchPopout': 'keybindShortcutSearchPopout__61c93',
+      'shortcuts': 'keyboardShortcuts__61c93',
 
       // no idea about these
-      'dim': 'dim_fcddc1',
+      'dim': 'dim__61c93',
     ),
   'loading': (
     'container': 'container_a2f514',
@@ -2593,7 +2682,9 @@ $classes: (
     // The contents of these notices are in English because yes.
     'completeSteps': 'notice__30f28',
     // contents: "You must complete a few more steps before you can start talking in this server."
-    'previewServerNotice': 'notice_c5cd6a',
+    'preview': 'notice_c5cd6a',
+    // preview server/view server as role
+    'previewButton': 'button_c5cd6a',
   ),
   // These appear to be shared between profile popout and server settings. likely used elsewhere too.
   // DOES NOT APPLY TO TOP OF CHAT CHANNEL AREA.
@@ -2664,11 +2755,6 @@ $classes: (
     'jumpButtonContainer': 'buttonsContainer__02a39',
     'jumpButton': 'button__02a39',
     'navContainer': 'container__3f123',
-    'pageControlContainer': 'pageControlContainer_c15210',
-    'pageControl': 'pageControl_c15210',
-    'pageButton': 'pageButton_c15210',
-    'activeButton': 'activeButton_c15210',
-    'endButton': 'endButton_c15210',
     'errorImage': 'errorImage_a9e706',
     'errorMessage': 'errorMessage_a9e706',
     // paired with emptyResultsText
@@ -2692,7 +2778,7 @@ $classes: (
     'iconVisible': 'visible_a45028',
     'iconClear': 'clear_a45028',
 
-    'visualRefresh': (
+    'settings': (
       // needs .visual-refresh
       // used in settings search, create dms
       // most others seem to be using _a45028 instead
@@ -2723,7 +2809,7 @@ $classes: (
   'guildList': (    
     'focusStroke': 'focusStroke_cc5dd2',
     
-    'guilds': 'guilds_c48ade',
+    'guilds': 'guilds__5e434',
     'wrapper': 'wrapper_ef3116',
     'hidden': 'hidden_ef3116',
     // unsure about usage but exists on same line as wrapper above
@@ -2820,24 +2906,25 @@ $classes: (
     'footer': 'footer__214dc',
   ),
   'sidebar': (
-    'sidebar': 'sidebar_c48ade',
-    'hasNotice': 'hasNotice_c48ade',
-    'list': 'sidebarList_c48ade',
+    'sidebar': 'sidebar__5e434',
+    'hasNotice': 'hasNotice__5e434',
+    'list': 'sidebarList__5e434',
     // appears in redesign as parent to #{c(sidebar private channels)} and #{c(sidebar server container)}.
-    'listRounded': 'sidebarListRounded_c48ade',
+    'listRounded': 'sidebarListRounded__5e434',
     // appears in redesign, adds border top left radius
-    'resizeHandle': 'sidebarResizeHandle_c48ade',
+    'resizeHandle': 'sidebarResizeHandle__5e434',
 
     // appears in redesign
     // Private Messages, Direct Messages.
     'private': (
-        'channels': 'privateChannels__35e86',
-        'searchBar': 'searchBar__35e86',
-        'searchBarComponent': 'searchBarComponent__35e86',
+        'channels': 'privateChannels_e6b769',
+        'searchBar': 'searchBar_e6b769',
+        'searchBarComponent': 'searchBarComponent_e6b769',
         // placeholder text "find or start a converstation"
         'scroller': 'scroller__99e7c',
         'headerContainer': 'privateChannelsHeaderContainer__99e7c',
         // Similar to category for servers
+        'tall': 'tall__99e7c',
         'headerText': 'headerText__99e7c',
         'startActivityIcon': 'plusIcon__675e5',
         // with play again - might need to start an activity prior
@@ -3244,7 +3331,7 @@ $classes: (
     // Panels include your avatar, username, mic, headphones and settings icons
     // as well as voice related stuff
     'panel': (
-      'panels': 'panels_c48ade',
+      'panels': 'panels__5e434',
 
       // Non-voice stuff
       'container': 'container__37e49',
@@ -3373,7 +3460,7 @@ $classes: (
       'activity': (
         'panel': 'panel__5dec7',
         // has background with theme dark/light
-        'activityPanel': 'activityPanel_c48ade',
+        'activityPanel': 'activityPanel__5e434',
         // has border bottom
         'body': 'body__5dec7',
         'gameWrapper': 'gameWrapper__5dec7',
@@ -3515,24 +3602,27 @@ $classes: (
     ),
   ),
   'tooltips': (
-    'tooltip': 'tooltip__382e7',
-    'disablePointerEvents': 'tooltipDisablePointerEvents__382e7',
-    'content': 'tooltipContent__382e7',
-    'contentAllowOverflow': 'tooltipContentAllowOverflow__382e7',
-    'top': 'tooltipTop__382e7',
-    'right': 'tooltipRight__382e7',
-    'bottom': 'tooltipBottom__382e7',
-    'left': 'tooltipLeft__382e7',
-    'center': 'tooltipCenter__382e7',
-    'pointer': 'tooltipPointer__382e7',
+    'tooltip': 'tooltip_c36707',
+    'disablePointerEvents': 'tooltipDisablePointerEvents_c36707',
+    'content': 'tooltipContent_c36707',
+    'contentAllowOverflow': 'tooltipContentAllowOverflow_c36707',
+    'top': 'tooltipTop_c36707',
+    'right': 'tooltipRight_c36707',
+    'bottom': 'tooltipBottom_c36707',
+    'left': 'tooltipLeft_c36707',
+    'center': 'tooltipCenter_c36707',
+    'pointer': 'tooltipPointer_c36707',
 
-    'primary': 'tooltipPrimary__382e7',
-    'black': 'tooltipBlack__382e7',
-    'grey': 'tooltipGrey__382e7',
-    'brand': 'tooltipBrand__382e7',
-    'red': 'tooltipRed__382e7',
-    'green': 'tooltipGreen__382e7',
-    'yellow': 'tooltipYellow__382e7',
+    'primary': 'tooltipPrimary_c36707',
+    'black': 'tooltipBlack_c36707',
+    'grey': 'tooltipGrey_c36707',
+    'brand': 'tooltipBrand_c36707',
+    'red': 'tooltipRed_c36707',
+    'green': 'tooltipGreen_c36707',
+    'yellow': 'tooltipYellow_c36707',
+
+    'dialogWrapper': 'dialogWrapper_b1f768',
+    // hover on server icon
 
     // different css lines
     'stageListenerPill': 'stageListenerPill_b1f768',
@@ -3545,53 +3635,58 @@ $classes: (
       // Generic-ish classes
       // default colours are now provided with inline styling.
       'badgeList': 'container__8061a',
-      'note': 'note_fcb628',
-      'noteTextarea': 'textarea__9daae',
-
       // seems to be used on all of them
       'showOutOfBoundaryComponents': 'showOutOfBoundaryComponents_c69a7b',
 
       // profile backgrounds
       'customTheme': 'custom-user-profile-theme',
       'userPopout': 'user-profile-popout',
-      'userModal': 'user-profile-modal',
+      'userModal': 'user-profile-modal' 'user-profile-modal-v2',
+      // bots still on v1 profile
       'userSidebar': 'user-profile-sidebar',
       'overlay': 'overlay_c0bea0',
       'outer': 'outer_c0bea0',
       'inner': 'inner_c0bea0',
 
-      // status
-      'statusBubbleContainer': 'container_ab8609',
-      'statusBubbleOuter': 'outer_ab8609',
-      'statusBubbleInner': 'inner_ab8609',
+      'status': (
+        'container': 'container_ab8609',
+        'outer': 'outer_ab8609',
+        'inner': 'inner_ab8609',
+
+        // hover over own status
+        'tooltip': 'tooltip__4e35b',
+        'tooltipContent': 'tooltipContent__4e35b',
+        'caretIcon': 'caretIcon__4e35b',
+        'caretFill': 'caretFill__4e35b',
+      ),
 
       // Banners are in their own line. The SVG Wrapper is in its own line.
       'banner': (
-          'banner': 'banner__68edb',
-          'gifTag': 'gifTag__68edb',
-          'mask': 'mask__68edb',
-        ),
+        'banner': 'banner__68edb',
+        'gifTag': 'gifTag__68edb',
+        'mask': 'mask__68edb',
+      ),
 
       // shared between modal+panel+popout+status+settings>profile
       // container also holds badges, notes button
       'username': (
-          'container': 'container__63ed3',
-          'clickableUsername': 'clickableUsername__63ed3',
-          'nickname': 'nickname__63ed3',
-          'userTagUsername': 'userTagUsername__63ed3',
-          'biteSize': 'biteSize__63ed3',
-          'panel': 'panel__63ed3',
-          'fullSize': 'fullSize__63ed3',
-          'nicknameIcons': 'nicknameIcons__63ed3',
-          'usernameRow': 'usernameRow__63ed3',     
-          'usernameContainer': 'container__63ed3',
-          'tags': 'tags__63ed3',
-          'userTag': 'userTag__63ed3',
-          'pronounsTooltip': 'pronounsTooltip__63ed3',
-          'pronouns': 'pronouns__63ed3',
-          'userTagDiscriminator': 'userTagDiscriminator__63ed3',
-          'dotSpacer': 'dotSpacer__63ed3',     
-        ),
+        'container': 'container__63ed3',
+        'clickableUsername': 'clickableUsername__63ed3',
+        'nickname': 'nickname__63ed3',
+        'userTagUsername': 'userTagUsername__63ed3',
+        'biteSize': 'biteSize__63ed3',
+        'panel': 'panel__63ed3',
+        'fullSize': 'fullSize__63ed3',
+        'nicknameIcons': 'nicknameIcons__63ed3',
+        'usernameRow': 'usernameRow__63ed3',     
+        'usernameContainer': 'container__63ed3',
+        'tags': 'tags__63ed3',
+        'userTag': 'userTag__63ed3',
+        'pronounsTooltip': 'pronounsTooltip__63ed3',
+        'pronouns': 'pronouns__63ed3',
+        'userTagDiscriminator': 'userTagDiscriminator__63ed3',
+        'dotSpacer': 'dotSpacer__63ed3',     
+      ),
 
       // shared between modal+panel+popout (not self)+status
       // contains:
@@ -3624,6 +3719,14 @@ $classes: (
         ),
 
       'overlayScroller': 'scroller_fcb628',
+
+      'button': (
+        // edit profile button not included
+        'themeColor': 'themeColor_fb7f94',
+        'primary': 'primary_fb7f94',
+        'secondary': 'secondary_fb7f94',
+        'inner': 'buttonInner_fb7f94',
+      ),
 
       // actually used on the modal!
       'memberSince': (
@@ -3665,9 +3768,15 @@ $classes: (
 
       // Modal: right click on user in same spots and click "View Profile"
       'modal': (
-        'root': 'root__24502',
-        'headerInner': 'headerInner__24502',
-        'body': 'body__24502',
+        'root': 'root__9c3be',
+        'bgImage': 'backgroundImage__9c3be', // nitro profiles only
+        'profile': 'profile__9c3be',
+        'profileHeader': 'profileHeader__9c3be',
+        'profileBody': 'profileBody__9c3be',
+        'profileButtons': 'profileButtons__9c3be',
+        'profileRolesSection': 'profileRolesSection__9c3be',
+        'profileNote': 'profileNote__9c3be',
+        
 
         // cannot find these but they're in the same rule as connections
         'connections': (
@@ -3690,22 +3799,24 @@ $classes: (
             'openIcon': 'connectedAccountOpenIcon_e6abe8',
           ),
 
-          'listScroller': 'listScroller__9d78f',
-          'listRow': 'listRow__9d78f',
-          'listAvatar': 'listAvatar__9d78f',
-          'listRowContent': 'listRowContent__9d78f',
-          'listName': 'listName__9d78f',
-          'listDiscriminator': 'listDiscriminator__9d78f',
-          'empty': 'empty__9d78f',
-          'emptyIcon': 'emptyIcon__9d78f',
-          'emptyIconFriends': 'emptyIconFriends__9d78f',
-          'emptyIconGuilds': 'emptyIconGuilds__9d78f',
-          'emptyIconStreamerMode': 'emptyIconStreamerMode__9d78f',
-          'emptyText': 'emptyText__9d78f',
+        'listScroller': 'listScroller__9d78f',
+        'listRow': 'listRow__9d78f',
+        'listAvatar': 'listAvatar__9d78f',
+        'listRowContent': 'listRowContent__9d78f',
+        'listName': 'listName__9d78f',
+        'listDiscriminator': 'listDiscriminator__9d78f',
+        'empty': 'empty__9d78f',
+        'emptyIcon': 'emptyIcon__9d78f',
+        'emptyIconFriends': 'emptyIconFriends__9d78f',
+        'emptyIconGuilds': 'emptyIconGuilds__9d78f',
+        'emptyIconStreamerMode': 'emptyIconStreamerMode__9d78f',
+        'emptyText': 'emptyText__9d78f',
 
-          'guildAvatar': 'guildAvatar_aafe31',
-          'guildAvatarWithoutIcon': 'guildAvatarWithoutIcon_aafe31',
-          'guildNick': 'guildNick_aafe31',
+        'guildAvatar': 'guildAvatar_aafe31',
+        'guildAvatarWithoutIcon': 'guildAvatarWithoutIcon_aafe31',
+        'guildNick': 'guildNick_aafe31',
+          
+        'noteTextarea': 'textarea__9daae',
         ),
 
       // Go to the DMs of someone while your screen is larger than
@@ -3750,7 +3861,7 @@ $classes: (
     'contentColumnWide': 'contentColumnWide__23e6b',
     
     'noticeRegion': 'noticeRegion__23e6b',
-    'noticeContainer': 'container_fcf29c',
+    'noticeContainer': 'container__9a9f9',
 
     'card': (
       // These are likely all over the app but are best found in settings.
@@ -3821,20 +3932,31 @@ $classes: (
     'closeButtonContainer': 'container_c2b141',
     'closeButton': 'closeButton_c2b141',
     'closeButtonKeybind': 'keybind_c2b141',
-
     
     'colorPickerPopout': 'customColorPicker__459fb',
   ),
 
   'userSettings': (
     'sidebar': (
-      'nitroTab': 'premiumTab__581ea',
-      'nitroLabel': 'premiumLabel_e681d1',
-      'nitroLabelSelected': 'selected_e681d1',
-      'nitroBackground': 'background_e681d1',
-      'nitroBackgroundSelected': 'selectedBackground_e681d1',
-      'socialLink': 'link__7df54',
+      'sidebar': 'sidebar__409aa',
+      'fixedContent': 'fixedContent__409aa', // profile and search
+      'navScroller': 'navScroller__409aa ',
+      'nav': 'nav__409aa',
+      'section': 'section__409aa',
+      'sectionLabel': 'sectionLabel__409aa',
+      'label': 'label__409aa',
+
+      'itemContainer': 'itemContainer_caf372',
+      'item': 'item_caf372',
+      'itemActive': 'active_caf372',
+      'itemContent': 'itemContent_caf372',
+      'itemIcon': 'icon_caf372',
+
+
     ),
+
+    'content': 'content_e9e3ed',
+    'contentHeader': 'contentHeader_e9e3ed',
 
     'account': (
       'profileCard': 'accountProfileCard__1fed1',
@@ -3861,9 +3983,24 @@ $classes: (
       'bioTextArea': 'bioTextArea__6a919',
       'profileContainer': 'container_ba7f98',
 
+      'lockIcon': 'iconBadge__03991',
+
+      'nameStyles': (
+        'content': 'modalContent__39813',
+        'selectionSection': 'selectionSection__39813',
+
+        'fontButton': 'fontButton_fc7677',
+        'fontSelected': 'selected_fc7677',
+        'fontText': 'fontText_fc7677',
+        
+        'effectButton': 'effectContainer_caa50c',
+        'effectSelected': 'selected_caa50c',
+        'effectText': 'effectText_caa50c'
+      ),
+
       'decoration': (
         'gridItem': 'decorationGridItem_dfa67d',
-        'itemSelected': 'selected_dfa67d',
+        'gridItemSelected': 'selected_dfa67d',
         'lockIconBadge': 'iconBadge_dfa67d',
         'preview': 'decorationPreview__51743',
         'previewSmall': 'smallDecorationPreviewsContainer__51743',
@@ -3871,9 +4008,17 @@ $classes: (
         'previewUpsellBanner': 'shopPreviewBanner__51743',
       ),
 
+      'nameplate': (
+        'inventoryControls': 'inventoryControls__6980e',
+        'inventoryControlsButton': 'inventoryControlsButton__6980e',
+        'inventoryControlsSelected': 'selected__6980e',
+        'nameplateItem': 'nameplateItem__6980e',
+        'nameplateItemOverlay': 'nameplateItemOverlay__6980e',
+      ),
+
       'effect': (
         'gridItem': 'effectGridItem_b4019a',
-        'itemSelected': 'selected_b4019a',
+        'gridItemSelected': 'selected_b4019a',
         'lockIconBadge': 'lockBadge_b4019a',
         'description': 'effectDescriptionNoGradient__92e52',
         'descriptionUpsell': 'effectDescriptionBorderWithGradient__92e52',
@@ -3884,12 +4029,17 @@ $classes: (
       'upsellContainer': 'upsellContainer__0b69f',
     ),
 
-    'content': (
+    'contentSocial': (
       'blockedCard': 'card__5cea9',
       'blockedHeader': 'header__5cea9',
       'blockedUserList': 'usersList__5cea9',
       'blockedRow': 'row__5cea9',
       'blockedLastRow': 'lastRow__5cea9',
+
+      'games': (
+        'emptyContainer': 'emptyContainer_de8069',
+        'emptyText': 'noGamesConnectedText_de8069',
+      ),
     ),
 
     'family': (
@@ -3966,6 +4116,8 @@ $classes: (
       'premiumtierCard': 'tierCard_a45ed3',
       'premiumtierInfo': 'tierInfo_a45ed3',
       'premiumtierTitle': 'tierTitle_a45ed3',
+
+      'shareNitroContainer': 'expandedProgressBarContainerSettingsPage_a61c56',
 
       'giftCard': 'giftCard_a45ed3',
       'giftImage': 'giftImage_a45ed3',
@@ -4088,13 +4240,20 @@ $classes: (
       'shortcutGroup': 'defaultKeybindShortcutGroup__740f2',
     ),
 
+    'activityPrivacy': (
+      'guildsWrapper': 'wrapper__7db08',
+      'guildsHeader': 'headerContainer__7db08',
+      'guildsControlsContainer': 'controlsContainer__7db08',
+      'guildsControlsDropDown': 'container_a16aea',
+      'guildIcon': 'iconContainer__0ecc4',
+    ),
+
     'games': (
       'notDetected': 'notDetected_cc46f0',
       'nowPlaying': 'nowPlaying_cc46f0',
       'gameName': 'gameName_cc46f0',
       'gameNameInput': 'gameNameInput_cc46f0',
-      'gameLastPlayed': 'lastPlayed_cc46f0',
-      'overlayStatusText': 'overlayStatusText_fd966d',
+      'gameLastPlayed': 'gameNameLastPlayed_cc46f0',
       'overlayToggleIcon': 'toggleIcon_cc46f0',
       'overlayToggleIconOn': 'toggleIconOn_cc46f0',
       'overlayToggleIconOff': 'toggleIconOff_cc46f0',
@@ -4595,61 +4754,61 @@ $classes: (
 
     // Best seen in Voice + Video settings, right at the top there's two
     'dropdown': (
-      'wrapper': 'wrapper__3f413',
-      'select': 'select__3f413',
-      'filled': 'lookFilled__3f413',
+      'wrapper': 'wrapper_a16aea',
+      'select': 'select_a16aea',
+      'filled': 'lookFilled_a16aea',
 
-      'open': 'open__3f413',
+      'open': 'open_a16aea',
 
-      'value': 'value__3f413',
-      'icons': 'icons__3f413',
+      'value': 'value_a16aea',
+      'icons': 'icons_a16aea',
 
-      'popout': 'popout__3f413',
-      'positionTop': 'popoutPositionTop__3f413',
-      'measurement': 'measurement__3f413',
+      'popout': 'popout_a16aea',
+      'positionTop': 'popoutPositionTop_a16aea',
+      'measurement': 'measurement_a16aea',
       // there's a hidden one next to the popout???
-      'option': 'option__3f413',
-      'selectedIcon': 'selectedIcon__3f413',
+      'option': 'option_a16aea',
+      'selectedIcon': 'selectedIcon_a16aea',
       // checkmark
-      'focused': 'focused__3f413',
+      'focused': 'focused_a16aea',
       // hover over item
-      'multi': 'multi__3f413',
+      'multi': 'multi_a16aea',
 
       // multi select
-      'optionPillContainer': 'optionPillContainer__3f413',
-      'optionPillItem': 'optionPillItem__3f413',
-      'optionPillBtn': 'optionPillBtn__3f413',
-      'optionPill': 'optionPill__3f413',
-      'deleteOptionIcon': 'deleteOptionIcon__3f413',
-      'multiSelectCheckbox': 'multiSelectCheckbox__3f413',
-      'unchecked': 'unchecked__3f413',
-      'checked': 'checked__3f413',
+      'optionPillContainer': 'optionPillContainer_a16aea',
+      'optionPillItem': 'optionPillItem_a16aea',
+      'optionPillBtn': 'optionPillBtn_a16aea',
+      'optionPill': 'optionPill_a16aea',
+      'deleteOptionIcon': 'deleteOptionIcon_a16aea',
+      'multiSelectCheckbox': 'multiSelectCheckbox_a16aea',
+      'unchecked': 'unchecked_a16aea',
+      'checked': 'checked_a16aea',
 
-      'clear': 'clear__3f413',
+      'clear': 'clear_a16aea',
 
       // i can't find this class but it's in a rule
       // idk where lmao
-      'searchable': 'searchable__3f413',
-      'searchInput': 'searchInput__3f413',
-      'editing': 'editing__3f413',
+      'searchable': 'searchable_a16aea',
+      'searchInput': 'searchInput_a16aea',
+      'editing': 'editing_a16aea',
       'label': 'label_f6639d',
-      'selectPositionTop': 'selectPositionTop__3f413',
-      'disabled': 'disabled__3f413',
+      'selectPositionTop': 'selectPositionTop_a16aea',
+      'disabled': 'disabled_a16aea',
       'hidden': 'hidden_f6639d',
-      'iconsContainer': 'iconsContainer__3f413',
-      'iconsCenter': 'iconsCenter__3f413',
-      'placeholder': 'placeholder__3f413',
-      'dropdownIcon': 'dropdownIcon__3f413',
-      'noResults': 'noResults__3f413',
-      'loading': 'loading__3f413',
-      'loadingSpinner': 'loadingSpinner__3f413',
-      'searchableSelect': 'searchableSelect__3f413',
-      'prefix': 'prefix__3f413',
-      'suffix': 'suffix__3f413',
-      'content': 'content__3f413',
+      'iconsContainer': 'iconsContainer_a16aea',
+      'iconsCenter': 'iconsCenter_a16aea',
+      'placeholder': 'placeholder_a16aea',
+      'dropdownIcon': 'dropdownIcon_a16aea',
+      'noResults': 'noResults_a16aea',
+      'loading': 'loading_a16aea',
+      'loadingSpinner': 'loadingSpinner_a16aea',
+      'searchableSelect': 'searchableSelect_a16aea',
+      'prefix': 'prefix_a16aea',
+      'suffix': 'suffix_a16aea',
+      'content': 'content_a16aea',
       'optionPillWrapper': 'optionPillWrapper_f6639d',
-      'noScrollbar': 'noScrollbar__3f413',
-      'multiSelectCheck': 'multiSelectCheck__3f413',
+      'noScrollbar': 'noScrollbar_a16aea',
+      'multiSelectCheck': 'multiSelectCheck_a16aea',
     ),
 
     // Click on the emoji, sticker or gif within the chatbar
@@ -4998,23 +5157,23 @@ $classes: (
     ),
 
     'pins': (
-      'popout': 'messagesPopoutWrap__45690',
-      'header': 'header__45690',
-      'titleContainer': 'titleContainer__45690',
-      'messages': 'messagesPopout__45690',
-      'messageGroup': 'messageGroupWrapper__45690',
-      'messageCozy': 'messageGroupCozy__45690',
-      'actionButtons': 'actionButtons__45690',
-      'jumpButton': 'jumpButton__45690',
-      'loading': 'loading__45690',
-      'loadingVisible': 'visible__45690',
-      'remove': 'closeIcon__45690',
+      'popout': 'messagesPopoutWrap_e8b59c',
+      'header': 'header_e8b59c',
+      'titleContainer': 'titleContainer_e8b59c',
+      'messages': 'messagesPopout_e8b59c',
+      'messageGroup': 'messageGroupWrapper_e8b59c',
+      'messageCozy': 'messageGroupCozy_e8b59c',
+      'actionButtons': 'actionButtons_e8b59c',
+      'jumpButton': 'jumpButton_e8b59c',
+      'loading': 'loading_e8b59c',
+      'loadingVisible': 'visible_e8b59c',
+      'remove': 'closeIcon_e8b59c',
 
       // no pins
-      'emptyPlaceholder': 'emptyPlaceholder__45690',
-      'emptyImage': 'image__45690',
-      'emptyBody': 'body__45690',
-      'footer': 'footer__45690',
+      'emptyPlaceholder': 'emptyPlaceholder_e8b59c',
+      'emptyImage': 'image_e8b59c',
+      'emptyBody': 'body_e8b59c',
+      'footer': 'footer_e8b59c',
       'block': 'block__30cbe',
       // discord put this on the rules for some reason? lots of inline
       'protip': 'pro__30cbe',
@@ -5030,6 +5189,7 @@ $classes: (
       'tabActive': 'active_f0cd33',
       'controls': 'controls_ab6641',
       'button': 'button__06eda',
+      'primary': 'primary__06eda',
       'secondary': 'secondary__06eda',
       // background secondary, hover primary
       'tertiary': 'tertiary__06eda',
@@ -5074,7 +5234,7 @@ $classes: (
         'close': 'closeButton__95796',
         'messageContainer': 'messageContainer__95796',
         'message': 'message__95796',
-        'scrollingFooterWrap': 'scrollingFooterWrap__45690',
+        'scrollingFooterWrap': 'scrollingFooterWrap_e8b59c',
       ),
 
       'unread': (
@@ -5189,7 +5349,7 @@ $classes: (
     'hidden': 'hidden_bc663c',
     // best way to get this class is to change banner/avi and click gifs
     'focusLock': 'focusLock__49fc1',
-    'root': 'root__49fc1',
+    'root': 'root__49fc1' 'container__8a031' /* quickswitcher, external links, server notifs */ ,
     'header': 'header__49fc1',
     // header text doesn't have its own class per se but can be targeted with header>h2
     'close': 'close__49fc1',
@@ -5199,7 +5359,6 @@ $classes: (
     'body': 'content__49fc1',
     'footer': 'footer__49fc1',
 
-    // apparently it still uses theme-dark and theme-light. wankers.
     // sizes
     'small': 'small__49fc1',
     'medium': 'medium__49fc1',
@@ -5234,45 +5393,45 @@ $classes: (
 
       // make a private channel and click next
       // more -- i cannot remember how to pull this up.
-      'modal': 'modal_b545d5',
-      'modalContent': 'modalContent_b545d5',
-      'modalFooter': 'modalFooter_b545d5',
-      'footer': 'footer_b545d5',
-      'description': 'description_b545d5',
-      'name': 'name_b545d5',
-      'type': 'type_b545d5',
-      'icon': 'icon_b545d5',
-      'error': 'error_b545d5',
-      'header': 'header_b545d5',
-      'title': 'title_b545d5',
-      'subtitle': 'subtitle_b545d5',
-      'subtitleIcon': 'subtitleIcon_b545d5',
-      'closeButton': 'closeButton_b545d5',
-      'sectionTitle': 'sectionTitle_b545d5',
-      'clone': 'clone_b545d5',
-      'permissionsTitle': 'permissionsTitle_b545d5',
-      'background': 'background_b545d5',
-      'foreground': 'foreground_b545d5',
-      'inputWrapper': 'inputWrapper_b545d5',
-      'inputInner': 'inputInner_b545d5',
-      'inputPrefix': 'inputPrefix_b545d5',
-      'switchIcon': 'switchIcon_b545d5',
-      'channelTypeDescription': 'channelTypeDescription_b545d5',
-      'storeChannelOptionSelector': 'storeChannelOptionSelector_b545d5',
-      'username': 'username_b545d5',
-      'emptyRoles': 'emptyRoles_b545d5',
-      'owner': 'owner_b545d5',
-      'addMembersContainer': 'addMembersContainer_b545d5',
-      'addMemberError': 'addMemberError_b545d5',
-      'createError': 'createError_b545d5',
-      'channelNameNote': 'channelNameNote_b545d5',
-      'radioLabelName': 'radioLabelName_b545d5',
-      'radioLabelDescription': 'radioLabelDescription_b545d5',
-      'newBadge': 'newBadge_b545d5',
-      'radioBar': 'radioBar_b545d5',
-      'radioBarLabel': 'radioBarLabel_b545d5',
-      'radioBarIcon': 'radioBarIcon_b545d5',
-      'radioItemName': 'radioItemName_b545d5',
+      'modal': 'modal_ac72c6',
+      'modalContent': 'modalContent_ac72c6',
+      'modalFooter': 'modalFooter_ac72c6',
+      'footer': 'footer_ac72c6',
+      'description': 'description_ac72c6',
+      'name': 'name_ac72c6',
+      'type': 'type_ac72c6',
+      'icon': 'icon_ac72c6',
+      'error': 'error_ac72c6',
+      'header': 'header_ac72c6',
+      'title': 'title_ac72c6',
+      'subtitle': 'subtitle_ac72c6',
+      'subtitleIcon': 'subtitleIcon_ac72c6',
+      'closeButton': 'closeButton_ac72c6',
+      'sectionTitle': 'sectionTitle_ac72c6',
+      'clone': 'clone_ac72c6',
+      'permissionsTitle': 'permissionsTitle_ac72c6',
+      'background': 'background_ac72c6',
+      'foreground': 'foreground_ac72c6',
+      'inputWrapper': 'inputWrapper_ac72c6',
+      'inputInner': 'inputInner_ac72c6',
+      'inputPrefix': 'inputPrefix_ac72c6',
+      'switchIcon': 'switchIcon_ac72c6',
+      'channelTypeDescription': 'channelTypeDescription_ac72c6',
+      'storeChannelOptionSelector': 'storeChannelOptionSelector_ac72c6',
+      'username': 'username_ac72c6',
+      'emptyRoles': 'emptyRoles_ac72c6',
+      'owner': 'owner_ac72c6',
+      'addMembersContainer': 'addMembersContainer_ac72c6',
+      'addMemberError': 'addMemberError_ac72c6',
+      'createError': 'createError_ac72c6',
+      'channelNameNote': 'channelNameNote_ac72c6',
+      'radioLabelName': 'radioLabelName_ac72c6',
+      'radioLabelDescription': 'radioLabelDescription_ac72c6',
+      'newBadge': 'newBadge_ac72c6',
+      'radioBar': 'radioBar_ac72c6',
+      'radioBarLabel': 'radioBarLabel_ac72c6',
+      'radioBarIcon': 'radioBarIcon_ac72c6',
+      'radioItemName': 'radioItemName_ac72c6',
     ),
 
     // When creating a new event
@@ -5337,6 +5496,8 @@ $classes: (
       'pillIconOnline': 'pillIconOnline__921c5',
       'pillMessage': 'pillMessage_b83a05',
       'pillIconTotal': 'pillIconTotal__921c5',
+      // edit notification button
+      'editProfileContainer': 'editProfileContainer__42179',
     ),
 
     // Click "Invite People" in the server header dropdown
@@ -5457,18 +5618,16 @@ $classes: (
     ),
 
     'screenshare': (
-      'headerContainer': 'container_a55fdc',
-      'tabSelected': 'tabItemSelected__9e06a',
-      'tile': 'tile_a2de16',
-      'sourceThumbnail': 'sourceThumbnail_a2de16',
-      'sourceSelected': 'selected_a2de16',
-      'card': 'card__4bb93',
-      'upsell': 'enhancedBanner__39bd2',
-      'selector': 'selectorButton_c6d3dc',
-      // resolution / fps
-      'selectorSelected': 'selectorButtonSelected_c6d3dc',
-      'selectorUpsell': 'premiumUpsell_c6d3dc',
-      'selectorUpsellText': 'enhancedSelectorNitroText_c6d3dc',
+      // selector pills
+      'pillContainer': 'pillContainer__9e06a',
+      'pillItem': 'pillItem__9e06a',
+      'pillItemSelected': 'pillItemSelected__9e06a',
+
+      'source': 'source_febe19',
+      'sourceSelected': 'selectedSource_febe1',
+      'sourcePreviewContainer': 'sourcePreviewContainer_febe19',
+      'sourcePreview': 'sourcePreview_febe19',
+      'sourceOverlayCTA': 'sourceOverlayCTA_febe19',
     ),
 
 
@@ -5793,61 +5952,61 @@ $classes: (
     'upload': (
       'areaPosition': 'uploadArea_f75fb0',
       // applies position fixed and other things with thread sidebar open/floating
-      'inner': 'inner_dbca3c',
+      'inner': 'inner_b78547',
 
       // Used in drop and modify
       'drop': (
-        'area': 'uploadArea_dbca3c',
-        'droppable': 'droppable_dbca3c',
-        'modalIn': 'uploadModalIn_dbca3c',
+        'area': 'uploadArea_b78547',
+        'droppable': 'droppable_b78547',
+        'modalIn': 'uploadModalIn_b78547',
 
-        'modal': 'uploadDropModal_dbca3c',
-        'error': 'error_dbca3c',
+        'modal': 'uploadDropModal_b78547',
+        'error': 'error_b78547',
         // upload a folder to get this to appear
         // "pops" are in another (sub) category
-        'bgScale': 'bgScale_dbca3c',
-        'icons': 'icons_dbca3c',
+        'bgScale': 'bgScale_b78547',
+        'icons': 'icons_b78547',
         // While the icons in this list are in order, the html tree order is one-three-two
         // the "uses" comment are other classes on the same element. they're listed all below under "fileTypes"
-        'wrapOne': 'wrapOne_dbca3c',
-        'one': 'one_dbca3c',
+        'wrapOne': 'wrapOne_b78547',
+        'one': 'one_b78547',
 
         // uses document
-        'wrapTwo': 'wrapTwo_dbca3c',
-        'two': 'two_dbca3c',
+        'wrapTwo': 'wrapTwo_b78547',
+        'two': 'two_b78547',
 
         // uses image
-        'wrapThree': 'wrapThree_dbca3c',
-        'three': 'three_dbca3c',
+        'wrapThree': 'wrapThree_b78547',
+        'three': 'three_b78547',
 
         // uses code
-        'instructions': 'instructions_dbca3c',
-        'title': 'title_dbca3c',
+        'instructions': 'instructions_b78547',
+        'title': 'title_b78547',
       ),
 
       // All of these rules have a background-image applied to them. You can find these under the same line as drop, above
       // After the first the rules all seem to be prefixed by uploadModal inner(from drop) file(from drop) icon.[type]
       // (these aren't even the only set of things like this!)
       'fileTypes': (
-        'icon': 'icon_dbca3c',
+        'icon': 'icon_b78547',
         // Base class for all of them
-        'document': 'document_dbca3c',
-        'image': 'image_dbca3c',
-        'code': 'code_dbca3c',
-        'video': 'video_dbca3c',
-        'acrobat': 'acrobat_dbca3c',
-        'ae': 'ae_dbca3c',
-        'sketch': 'sketch_dbca3c',
-        'ai': 'ai_dbca3c',
-        'archive': 'archive_dbca3c',
-        'photoshop': 'photoshop_dbca3c',
-        'ps': 'ps_dbca3c',
+        'document': 'document_b78547',
+        'image': 'image_b78547',
+        'code': 'code_b78547',
+        'video': 'video_b78547',
+        'acrobat': 'acrobat_b78547',
+        'ae': 'ae_b78547',
+        'sketch': 'sketch_b78547',
+        'ai': 'ai_b78547',
+        'archive': 'archive_b78547',
+        'photoshop': 'photoshop_b78547',
+        'ps': 'ps_b78547',
         // This class uses the same image as photoshop. why there's two is anyone's guess
-        'spreadsheet': 'spreadsheet_dbca3c',
-        'webcode': 'webcode_dbca3c',
-        'audio': 'audio_dbca3c',
+        'spreadsheet': 'spreadsheet_b78547',
+        'webcode': 'webcode_b78547',
+        'audio': 'audio_b78547',
         // This class also has a margin applied to it
-        'unknown': 'unknown_dbca3c',
+        'unknown': 'unknown_b78547',
       ),
 
       // These little things appear briefly and ARE used elsewhere within modals or the app itself.
@@ -5858,14 +6017,14 @@ $classes: (
         'light': 'light_e42a84',
         'cross': 'cross_e42a84',
 
-        'sparkleOne': 'sparkleOne_dbca3c',
-        'sparkleTwo': 'sparkleTwo_dbca3c',
-        'popOne': 'popOne_dbca3c',
+        'sparkleOne': 'sparkleOne_b78547',
+        'sparkleTwo': 'sparkleTwo_b78547',
+        'popOne': 'popOne_b78547',
         // There doesn't seem to be a popTwo
-        'lightOne': 'lightOne_dbca3c',
-        'lightTwo': 'lightTwo_dbca3c',
-        'crossOne': 'crossOne_dbca3c',
-        'crossTwo': 'crossTwo_dbca3c',
+        'lightOne': 'lightOne_b78547',
+        'lightTwo': 'lightTwo_b78547',
+        'crossOne': 'crossOne_b78547',
+        'crossTwo': 'crossTwo_b78547',
 
         // Colors use images
         'sparkleWhite': 'sparkleWhite_e42a84',
@@ -5883,23 +6042,23 @@ $classes: (
       ),
 
       'modify': (
-        'modal': 'uploadModal_dbca3c',
-        'file': 'file_dbca3c',
-        'expandable': 'expandable_dbca3c',
+        'modal': 'uploadModal_b78547',
+        'file': 'file_b78547',
+        'expandable': 'expandable_b78547',
         // used with images and gifs
-        'description': 'description_dbca3c',
-        'filename': 'filename_dbca3c',
-        'comment': 'comment_dbca3c',
-        'label': 'label_dbca3c',
+        'description': 'description_b78547',
+        'filename': 'filename_b78547',
+        'comment': 'comment_b78547',
+        'label': 'label_b78547',
         // section header thingy
-        'filenameInputWrapper': 'channelTextAreaUpload_dbca3c',
+        'filenameInputWrapper': 'channelTextAreaUpload_b78547',
         // it's unique here
-        'optional': 'optional_dbca3c',
+        'optional': 'optional_b78547',
         // found in css
-        'footer': 'footer_dbca3c',
-        'hasSpoilers': 'hasSpoilers_dbca3c',
-        'footerRightAlign': 'footerRightAlign_dbca3c',
-        'cancelAllButton': 'cancelAllButton_dbca3c',
+        'footer': 'footer_b78547',
+        'hasSpoilers': 'hasSpoilers_b78547',
+        'footerRightAlign': 'footerRightAlign_b78547',
+        'cancelAllButton': 'cancelAllButton_b78547',
         // found within css
       ),
 
@@ -5926,54 +6085,60 @@ $classes: (
     ),
 
     // Click an image (png, jpg, gif) in chat. This may not apply to videos or other embeds.
-    'mediaViewer': (
-        'carouselModal': 'carouselModal_d3a6f0',
-        // put on modal root
-        'base': 'base__5cd44',
-        // applies to top bar and action buttons
-        'topBar': 'topBar__6088c',
-        // has ::before with gradient background
-        'closeButton': 'closeButton__6088c',
-        'closeButtonInner': 'closeButtonInner__6088c',
-        'messageContents': 'messageContents__6088c',
-        // displayed in topBar
-        'timestamp': 'timestamp__6088c',
+    'imageViewer': (
+      'carouselModal': 'carouselModal_d3a6f0',
+      // put on modal root
+      'base': 'base__5cd44',
+      // applies to top bar and action buttons
+      'topBar': 'topBar__6088c',
+      // has ::before with gradient background
 
-        'group': 'group__5cd44',
+      'actionButtons': 'actionButtons_cc1819',
+      // paired with base. holds many buttons.
+      'actionButton': 'actionButton_cc1819',
+      // individual button. paired with actionButtonWrapper for some reason. has aira-label.
+      'actionButtonWrapper': 'actionButtonWrapper_cc1819',
+      // parent to actionButtonInner
+      'actionButtonInner': 'actionButtonInner_cc1819',
+      
+      'closeButton': 'closeButton__6088c',
+      'closeButtonInner': 'closeButtonInner__6088c',
+      'messageContents': 'messageContents__6088c',
+      // displayed in topBar
+      'timestamp': 'timestamp__6088c',
 
-        // holds action buttons and wrapper chain
-        'mediaContainerWrapper': 'wrapper_b2eddf',
-        // parent of mediaContainer
-        'mediaContainer': 'mediaContainer_b2eddf',
-        // parent of mediaWrapper
-        'mediaWrapper': 'mediaWrapper_b2eddf',
-        // parent of innerWrapper
-        'innerWrapper': 'innerWrapper_b2eddf',
-        // parent of imageWrapperZoom and imageWrapperParent (same element)
-        'imageWrapperZoom': 'wrapper_a22bfd',
-        // class named so as it has a zoomed class with same suffix. paired with imageWrapperParent... why are there so many wrappers.
-        'zoomed': 'zoomed_a22bfd',
-        // click on image
-        'imageWrapperParent': 'wrapper__091cf',
-        // paired with imageWrapperZoom. parent to imageWrapperInner
-        'imageWrapperInner': 'imageWrapper_af017a',
-        // WHY ARE THERE SO MANY WRAPPERS. parent to loadingOverlay
-        'loadingOverlay': 'loadingOverlay_af017a',
+      'group': 'group__5cd44',
 
-        // parent to the img element.
-        'actionButtons': 'actionButtons_cc1819',
-        // paired with base. holds many buttons.
-        'actionButton': 'actionButton_cc1819',
-        // individual button. paired with actionButtonWrapper for some reason. has aira-label.
-        'actionButtonWrapper': 'actionButtonWrapper_cc1819',
-        // parent to actionButtonInner
-        'actionButtonInner': 'actionButtonInner_cc1819',
-      ),
+      // holds action buttons and wrapper chain
+      'mediaContainerWrapper': 'wrapper_b2eddf',
+      // parent of mediaContainer
+      'mediaContainer': 'mediaContainer_b2eddf',
+      // parent of mediaWrapper
+      'mediaWrapper': 'mediaWrapper_b2eddf',
+      // parent of innerWrapper
+      'innerWrapper': 'innerWrapper_b2eddf',
+      // parent of imageWrapperZoom and imageWrapperParent (same element)
+      'imageWrapperZoom': 'wrapper_a22bfd',
+      // class named so as it has a zoomed class with same suffix. paired with imageWrapperParent... why are there so many wrappers.
+      'zoomed': 'zoomed_a22bfd',
+      // click on image
+      'imageWrapperParent': 'wrapper__091cf',
+      // paired with imageWrapperZoom. parent to imageWrapperInner
+      'imageWrapperInner': 'imageWrapper_af017a',
+      // WHY ARE THERE SO MANY WRAPPERS. parent to loadingOverlay
+      'loadingOverlay': 'loadingOverlay_af017a',
+      // parent to the img element.
+    ),
     
     'purchase': (
+      'backgroundRefresh': 'premiumBrandRefreshBackground_e5f3a9',
+
       'nitroTier': (
         'header': 'skuSelectModalHeader_e50a4d',
         'content': 'skuSelectModalContent_e50a4d',
+        'contentRefresh': 'premiumBrandRefreshContent_e50a4d',
+
+        'card': 'card__6df1a',
       ),
 
       'gift': (
@@ -6009,6 +6174,24 @@ $classes: (
         'quantityIcon': 'icon__96f95',
         'quantityValue': 'value__96f95',
         'upsellFooter': 'upsellFooter__5e07c',
+      ),
+    ),
+
+    'poll': (
+      'container': 'container__53cea',
+
+      'create': (
+        'expressionPickerButton': 'expressionPickerButton__7b848',
+        'expressionPickerIconDefault': 'expressionPickerIconDefault__7b848',
+        'addAnswerButton': 'addAnswerButton_d97f89',
+      ),
+
+      // click 'votes' in a poll
+      'votes': (
+        'sidebarScroller': 'scroller__01c8c',
+        'voters': 'voters__01c8c',
+        'voteDefault': 'voteDefault__01c8c',
+        'voteSelected': 'voteSelected__01c8c',
       ),
     ),
   ),
@@ -6644,16 +6827,6 @@ $classes: (
           'membersChannelContainer': 'mainTableContainer_dd2627',
 
           // below: known to not exist elsewhere in this file
-          'gameVerifiedIcon': 'gameVerifiedIcon_cc46f0',
-          'nitroTrialBadge': 'premiumTrialAcknowledgedBadge__4c1e4',
-          'scrollerWrap': 'wrapper__28a87',
-          'commandTooltip': 'tooltip_c530da',
-          'commandTooltipPointer': 'tooltipPointer_c530da',
-          'upsellTooltipText': 'upsellTooltipWrapper__675aa',
-          'upsellTooltipCaretTopCenter': 'caretTopCenter__675aa',
-          'newGuildTooltip': 'container_be6a5c',
-          'newGuildTooltipPointer': 'tooltipPointer_be6a5c',
-          'newGuildTooltipCard': 'container_cfbfb9',
           'libraryScroller': 'scroller__4a84a',
           'libraryTable': 'table_adb41f',
           'libraryTableHeader': 'header_adb41f',
@@ -6683,7 +6856,6 @@ $classes: (
           'libraryDefaultIndicator': 'defaultIndicator_a6f654',
           'libraryPlayButton': 'playButton__0cb56',
           'libraryPlayButtonContents': 'playButtonContents__0cb56',
-          'botInviteModalContent': 'contentBackground__3d3b0',
           'authModalInApp': 'inApp_c5a065',
           'authModalScopeTimes': 'iconWrapper_cf14a8',
           'connectionDebugPopout': 'container__50387',
@@ -6744,7 +6916,6 @@ $classes: (
           'createEventCreateStageContainer': 'container__03b47',
           'createEventColorMuted': 'colorMuted_c9946a',
           'createEventColorBrand': 'colorBrand_c9946a',
-          'copyGiftCode': 'copyInput_fffc15',
           'giftQuestContainer': 'outerContainer__2055a',
           'giftQuestProgress': 'gridProgressBar__2055a',
           'phoneInput': 'phoneField_a0c54f',
@@ -6773,29 +6944,15 @@ $classes: (
           'serverExperienceGradient': 'overlay_fe70ca',
           'customizeChannelsPill': 'selectValuePill__05934',
           'customizeChannelsOption': 'optionButtonWrapper__270d7',
-          'channelNotInList': 'chatHeaderBar_dc83f5',
-          'membersChannelRowContainer': 'memberRowContainer__71c22',
-          'userSettingsProfilesPreviewStatus': 'statusDot_ab876d',
           'avatarEditingContainer': 'editingContainer__11787',
-          'messageReqSpam': 'selected_dcc822',
-          'messageReqSpamCheck': 'hamBanner__6a41e',
           'sidebarPFPUpsell': 'editor__2a891',
           'chatToolbarButton': 'button_bba883',
           'chatToolbarIcon': 'icon_bba883',
-          'previewServerIconContainer': 'iconContainer__1b9f0',
-          'previewServerChannelIcon': 'channelIcon__949ab',
-          'previewServerChannelTitleIcon': 'channelTitleIcon__949ab',
-          'previewServerChannelOptionArrow': 'optionArrow__949ab',
-          'previewServerHeader': 'header_c5cd6a',
-          'previewServerContainer': 'container__7e919',
-          'previewServerBackButton': 'button_c5cd6a',
-          'previewServerHomeContainer': 'container_c68a2c',
           'serverShopIntro': 'container_adb50a',
           'serverShopSelected': 'selected_d804ff',
           'inboxPopoutPill': 'unread__6fddf',
           'beforeTalkRulesBackground': 'fieldBackground_d48a51',
           'beforeTalkRule': 'termsRow_d48a51',
-          'banReasonOther': 'banReasonOtherClickable__837b7',
           'webhookFooter': 'footer__51eb2',
           'webhookPopout': 'guildPopout__51eb2',
           'webhookEmojiRow': 'emojiCounter__51eb2',
@@ -6814,25 +6971,6 @@ $classes: (
           'subEnabledServers': 'integrationWrapper_c7f964',
           'freeBoost': 'header__99020',
           'nitroTrial': 'tile_ff4e03',
-          'previewServerHomeContainerInner': 'container__29699',
-          'previewServerHomeIcon': 'icon_ac2d0d',
-          'previewServerHomeInteractiveCard': 'interactiveCard_d92364',
-          'previewServerHomeInteractiveCardSelected': 'selected__142a3',
-          'previewServerHomeCard': 'card_d4f6c7',
-          'previewServerConversation': 'container__55cc1',
-          'previewServerConversationRoot': 'conversationRoot_bed0b3',
-          'previewServerConversationReply': 'replySpine__081f6',
-          'previewServerConversationMessage': 'conversationMessage__3c425',
-          'questPanelContentExpanded': 'contentExpanded__636a2',
-          'upsellTooltipCaretRightCenter': 'caretRightCenter__675aa',
-          'pollCheckbox': 'checkbox_f4f0eb',
-          'pollCheckboxSelected': 'checkboxSelected_f4f0eb',
-          'pollVotesPopoutAnswerScroller': 'scroller__01c8c',
-          'pollVotesPopoutVoters': 'voters__01c8c',
-          'pollCreatePopoutAnswerInputWrapper': 'defaultTextInputWrapper__7b848',
-          'pollCreatePopoutAddAnswer': 'addAnswerButton_d97f89',
-          'pollCreatePopoutAddAnswerIcon': 'addAnswerIconDefault_d97f89',
-          'pollCreatePopoutAddAnswerLabel': 'addAnswerButtonLabel_d97f89',
 
           // SORTED AND NEED ALIASES
         ),

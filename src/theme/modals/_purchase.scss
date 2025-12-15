@@ -1,5 +1,19 @@
 @use 'backend' as *;
 
+#{c(modals purchase backgroundRefresh)} {
+  background: cv('shading.modal') !important;
+}
+
+// NITRO TIER
+#{c(modals purchase nitroTier content)} {
+  &#{c(modals purchase nitroTier contentRefresh)}#{c(modals purchase nitroTier contentRefresh)} {
+    background: transparent;
+  }
+}
+#{c(modals purchase nitroTier card)} {
+  background: cv('shading.cardAlt');
+}
+
 // GIFT
 #{c(modals purchase gift spinner)} {
   background: transparent;
@@ -9,22 +23,20 @@
 }
 #{c(modals purchase gift shopIcon)} {
   background: cv('color.main');
-  color: var(--header-primary);
+  color: var(--interactive-icon-active);
 }
-#{c(main visualRefresh)} {
-  #{c(modals purchase gift selectionBox)} {
-    background: cv('shading.cardInner');
-    outline: none;
-  }
-  #{c(modals purchase gift selectionBoxSelected)} {
-    background: cv('shading.cardInner');
-    outline: 2px solid cv('color.main');
-  }
-  #{c(modals purchase gift preview)} {
-    background: cv('shading.cardInner');
-    outline: 2px solid cv('color.main');
-    border: none
-  }
+#{c(modals purchase gift selectionBox)} {
+  background: cv('shading.cardAlt');
+  outline: none;
+}
+#{c(modals purchase gift selectionBoxSelected)} {
+  background: cv('shading.cardAlt');
+  outline: 2px solid cv('color.main');
+}
+#{c(modals purchase gift preview)} {
+  background: cv('shading.cardAlt');
+  outline: 2px solid cv('color.main');
+  border: none
 }
 #{c(modals purchase gift customMessage)} {
   background: transparent;
@@ -50,7 +62,7 @@
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(modals purchase boost quantityIconWrapper)} {
-    background: cv('shading.cardInner');
+    background: cv('shading.cardAlt');
   }
 }
 #{c(modals purchase boost quantityValue)} {

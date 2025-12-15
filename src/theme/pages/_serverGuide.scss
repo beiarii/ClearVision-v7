@@ -8,8 +8,9 @@
 }
 
 // CARDS
-#{c(main visualRefresh)} {
-  #{c(serverGuide rowCard)} {
+#{c(serverGuide rowCard)} {
+  &,
+  &:hover {
     background: cv('shading.card');
     border: cv('shading.card');
   }

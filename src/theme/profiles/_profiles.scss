@@ -34,24 +34,12 @@
     }
   }
 }
+
 #{c(profile outer)} {
+  border: none;
   &:not(#{c(profile customTheme)}) {    
     background: cv('shading.bg');
     #{c(profile inner)} {
-      background: transparent;
-    }
-
-    // STATUS BUBBLE
-    #{c(profile statusBubbleOuter)} {
-      background: cv('shading.popout');
-    }
-    #{c(profile statusBubbleOuter)} {
-      &::before,
-      &::after {
-        display: none;
-      }
-    }
-    #{c(profile statusBubbleInner)} {
       background: transparent;
     }
   }
@@ -59,51 +47,95 @@
 #{c(profile overlay)} {
   background-color: cv('shading.card');
 }
-#{c(profile note)} {
-  #{c(profile noteTextarea)} {
-    border: none;
-    background: cv('shading.input.bg');
-    &:focus {
-      background: cv('shading.input.bg');
+
+// STATUS
+#{c(profile outer)}:not(#{c(profile customTheme)}) {
+  #{c(profile status outer)} {
+    background: cv('shading.popout');
+  }
+  #{c(profile status inner)} {
+    background: transparent;
+  }
+}
+#{c(profile status outer)} {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+#{c(profile status tooltip)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+#{c(profile status caretIcon)} #{c(profile status caretFill)} {
+  fill: cv('shading.popout');
+}
+
+// POPOUT SEND MESSAGE
+#{c(profile customTheme)} {
+  #{c(chatForm channelTextAreaInline)} {
+    background: var(--user-profile-note-background-focus);;
+    box-shadow: 0 0 0 2px var(--user-profile-border);
+    &:focus-within {
+      box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }
 }
 
-// POPOUT SEND MESSAGE
-#{c(main visualRefresh)} {
-  // NITRO PROFILE
-  #{c(profile customTheme)} {
-    #{c(chatForm channelTextAreaInline)} {
-      background: var(--user-profile-note-background-focus);;
-      box-shadow: 0 0 0 2px var(--user-profile-border);
-      &:focus-within {
-        box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
-      }
+// PROFILE STYLES
+#{c(profile modal profile)} {
+  background: cv('shading.bg');
+  outline: none;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+#{c(profile modal profileNote)} {
+  #{c(profile modal noteTextarea)} {
+    margin-top: 2px;
+    border-color: cv('shading.input.border');
+    background: cv('shading.input.bg');
+    &:focus:focus,
+    &:focus:hover {
+      background: cv('shading.input.bg');
+      border-color: cv('color.main');
     }
   }
 }
 
 // NITRO PROFILE MODAL
-#{c(main visualRefresh)} {
-  #{c(profile customTheme)} {
-    #{c(tab top)} {
-      #{c(tab item)} {
-        --selected-tab-item-color: var(--profile-gradient-secondary-color);
-        &#{c(tab selected)} {
-          --selected-tab-item-color: var(--profile-gradient-primary-color);
-        }
+#{c(profile customTheme)} {
+  
+  // TABS
+  #{c(tab top)} {
+    #{c(tab item)} {
+      --selected-tab-item-color: var(--profile-gradient-secondary-color);
+      &#{c(tab selected)} {
+        --selected-tab-item-color: var(--profile-gradient-primary-color);
       }
     }
   }
-}
-#{c(profile customTheme)} {
+
+  // BUTTONS
+  #{c(button new primary)} {
+    background-color: var(--control-background-primary-default);
+    border-color: var(--control-border-primary-default);
+  }
+  #{c(button new secondary)} {
+    background-color: var(--control-background-secondary-default);
+    border-color: var(--control-border-secondary-default);
+  }
+
+  // SCROLLBAR
   ::-webkit-scrollbar-thumb {
     background-color: var(--profile-gradient-primary-color);
   }
-  #{c(profile noteTextarea)} {
+
+  // NOTE
+  #{c(profile modal noteTextarea)} {
     background: var(--user-profile-note-background-focus);
-    &:focus {
-      box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
+    &:focus,
+    &:focus:hover {
+      border-color: var(--profile-gradient-primary-color);
       background: var(--user-profile-note-background-focus);
     }
   }
